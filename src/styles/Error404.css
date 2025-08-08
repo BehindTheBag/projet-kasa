@@ -1,0 +1,32 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  color: #ff6060;
+  text-align: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.error-image {
+  margin-bottom: 10rem;
+}
+
+
+.error-details {
+  font-size: 30px;
+}
+
+.error-back {
+  color: black;
+  font-size: 1.4rem;
+  margin-top: 4rem;
+  border-bottom: 2px solid grey;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 767px) {
+  .error-return {
+    margin-bottom: 120px;
+  }
+}

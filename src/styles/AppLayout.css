@@ -1,0 +1,13 @@
+.app-Layout {
+     padding-inline: 3rem;
+    }
+
+.app-layout main {
+  
+  color: #ff5d5d;
+}
+
+main {
+    padding: 2rem 3rem;
+    min-height: 62vh;
+}

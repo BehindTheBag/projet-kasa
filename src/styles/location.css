@@ -1,0 +1,50 @@
+.card {
+    display: flex;
+    min-height: 50vh;
+    margin-top: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    
+   
+    
+    
+}
+
+.house {
+    display: flex;
+    background: linear-gradient(222deg, transparent 99%, rgba(0, 0, 0, 0.5)),#FF6060;;
+    border-radius: 0.7rem; 
+    width: 30%;
+    min-width: 200px;
+    min-height: 200px; 
+    justify-content: center;
+    position: relative; 
+    flex-basis: 30%;
+}
+
+.house-title {
+    position: absolute; 
+    left: 1rem; 
+    bottom: 1rem; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    white-space: normal;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; 
+    padding: 0;
+    justify-content: center;
+    
+  }
+
+  .house {
+    width: 85%;
+    
+  }
+}

@@ -1,0 +1,164 @@
+.appart-page {
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.appart-image img {
+  width: 100%;
+  border-radius: 1rem;
+  margin: 0 auto 2rem auto;
+  object-fit: cover;
+}
+
+.appart-title {
+  font-weight: 500;
+  color: #FF6060;
+  /* text-align: start; */
+  margin: 0;
+}
+
+.appart-location {
+  color: black;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.appart-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.appart-tags span {
+  background-color: #FF6060;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  min-width: 14%;
+  
+}
+
+
+
+.appart-stars {
+  display: flex;
+  gap: 0.2rem;
+  font-size: 1.5rem; 
+  color: #FF6060;
+
+}
+
+.appart-description {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.appart-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.side-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.appart-host {
+  display: flex;
+  text-align: inherit;
+  gap: 1rem;
+}
+
+.appart-hostname {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FF6060;
+  line-height: 1.2;
+}
+
+.appart-rating {
+    margin-top: 1.7rem;
+}
+
+.host-icon {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.side-info span img {
+  width: 20px;
+  height: 20px;
+  margin-left: 12px;
+}
+
+.appart-details-wrapper {
+  display: flex;
+  gap: 4rem;
+  max-width: 100%
+}
+
+.appart-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FF6060;
+  color: white;
+  border-radius: 0.4rem;
+  min-width: 47%;
+}
+
+.appart-details h3 {
+  padding-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.appart-details img {
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 845px) {
+  .side-info {
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .appart-host {
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .appart-rating {
+    margin: 0; 
+  }
+
+  .appart-details-wrapper {
+    flex-direction: column; 
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+ 
+}

@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 5rem;
+    font-weight: 600;
+    color: #ff5d5d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navlogo {
+    margin-right: auto;
+}
+
+.navlink {
+    color: black;
+    text-decoration: none;
+    
+}
+
+
+.navlink.active {
+    border-bottom: 2px solid grey; 
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap; 
+    text-transform: uppercase;
+    font-size: 1.45rem;
+    font-weight: 400;
+    }
+    }

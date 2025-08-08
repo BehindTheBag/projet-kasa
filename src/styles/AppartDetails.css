@@ -1,0 +1,19 @@
+.appart-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FF6060;
+  color: white;
+  border-radius: 0.4rem;
+  min-width: 47%;
+}
+
+.appart-details h3 {
+  padding-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.appart-details img {
+  padding-right: 1rem;
+  cursor: pointer;
+}
