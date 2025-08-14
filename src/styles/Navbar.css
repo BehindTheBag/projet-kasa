@@ -8,10 +8,15 @@
     font-weight: 600;
     color: #ff5d5d;
     font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    min-width: 0;
 }
 
 .navlogo {
     margin-right: auto;
+    
+    
 }
 
 .navlink {
@@ -28,9 +33,16 @@
 
 @media screen and (max-width: 768px) {
   .navbar {
-    flex-wrap: wrap; 
     text-transform: uppercase;
+    gap: 1rem;
     font-size: 1.45rem;
     font-weight: 400;
     }
     }
+
+    @media (max-width: 768px) {
+  .navlogo {
+    max-width: 80px;
+  
+  }
+}

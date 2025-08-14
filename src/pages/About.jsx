@@ -1,12 +1,12 @@
-import Banner from "../components/Banner/Banner";
+import BannerImg from "../components/Banner/BannerImg";
 import AppartDetails from "../components/AppartDetails/AppartDetails";
-import '../styles/About.css';
+import "../styles/About.css";
+import "../styles/Banner.css";
 
 function About() {
   return (
     <>
-      <Banner />
-
+      <BannerImg />
       <div className="about-details-wrapper">
         <AppartDetails title="Fiabilité" />
         <AppartDetails title="Respect" />

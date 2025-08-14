@@ -1,7 +1,6 @@
 .appart-page {
   padding: 2rem;
   font-family: 'Montserrat', sans-serif;
-
 }
 
 .appart-image img {
@@ -15,6 +14,7 @@
   font-weight: 500;
   color: #FF6060;
   /* text-align: start; */
+  white-space: nowrap;
   margin: 0;
 }
 
@@ -39,17 +39,13 @@
   font-size: 0.9rem;
   text-align: center;
   min-width: 14%;
-  
 }
-
-
 
 .appart-stars {
   display: flex;
   gap: 0.2rem;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   color: #FF6060;
-
 }
 
 .appart-description {
@@ -68,11 +64,29 @@
   flex-wrap: wrap;
 }
 
+.appart-top > div:first-child {
+  flex: 1 1 60%;
+  min-width: 280px; /* query fix */
+}
+
+
 .side-info {
+  min-width: 150px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
+}
+
+
+.appart-hostname {
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FF6060;
+  line-height: 1.2;
 }
 
 .appart-host {
@@ -81,16 +95,8 @@
   gap: 1rem;
 }
 
-.appart-hostname {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #FF6060;
-  line-height: 1.2;
-}
-
 .appart-rating {
-    margin-top: 1.7rem;
+  margin-top: 1.7rem;
 }
 
 .host-icon {
@@ -101,7 +107,6 @@
   object-fit: cover;
 }
 
-
 .side-info span img {
   width: 20px;
   height: 20px;
@@ -111,7 +116,7 @@
 .appart-details-wrapper {
   display: flex;
   gap: 4rem;
-  max-width: 100%
+  max-width: 100%;
 }
 
 .appart-details {
@@ -134,31 +139,40 @@
   cursor: pointer;
 }
 
-
+/* Responsive */
 @media screen and (max-width: 845px) {
+
+  .appart-top > div:first-child {
+    flex-basis: 100%;
+    min-width: auto;
+    margin-bottom: 1rem;
+  }
+
   .side-info {
-    flex-direction: row-reverse; 
+    flex-basis: 100%;
+    min-width: auto;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
     width: 100%;
     margin-bottom: 1rem;
   }
 
   .appart-host {
+    display: flex;
     align-items: center;
     gap: 0.5rem;
+    text-align: left;
   }
 
   .appart-rating {
-    margin: 0; 
+    margin: 0;
   }
 
   .appart-details-wrapper {
-    flex-direction: column; 
+    flex-direction: column;
     width: 100%;
   }
 }
 
-@media (min-width: 769px) {
- 
-}
