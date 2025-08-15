@@ -1,17 +1,17 @@
-import BannerImg from "../components/Banner/BannerImg";
+import mountainImg from "../assets/mountains.png";
 import AppartDetails from "../components/AppartDetails/AppartDetails";
+import BannerImg from "../components/Banner/BannerImg";
+import aboutData from "../data/about.json";
 import "../styles/About.css";
-import "../styles/Banner.css";
 
 function About() {
   return (
     <>
-      <BannerImg />
+      <BannerImg src={mountainImg} alt="Bannière montagnes" />
       <div className="about-details-wrapper">
-        <AppartDetails title="Fiabilité" />
-        <AppartDetails title="Respect" />
-        <AppartDetails title="Service" />
-        <AppartDetails title="Sécurité" />
+        {aboutData.map(item => (
+          <AppartDetails key={item.id} title={item.title} content={item.description} />
+        ))}
       </div>
     </>
   );

@@ -1,10 +1,11 @@
-import Banner from '../components/Banner/Banner';
+import BannerImg from '../components/Banner/BannerImg';
 import Location from '../components/Location/Location';
+import landingImg from '../assets/img.png';
 
 function Landing() {
   return (
     <>
-      <Banner />
+      <BannerImg src={landingImg} alt="Banner Landing" text="Chez vous, partout et ailleurs" />
       <Location />
     </>
   );

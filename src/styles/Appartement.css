@@ -5,6 +5,7 @@
 
 .appart-image img {
   width: 100%;
+  height: 415px;
   border-radius: 1rem;
   margin: 0 auto 2rem auto;
   object-fit: cover;
@@ -119,16 +120,6 @@
   max-width: 100%;
 }
 
-.appart-details {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #FF6060;
-  color: white;
-  border-radius: 0.4rem;
-  min-width: 47%;
-}
-
 .appart-details h3 {
   padding-left: 0.5rem;
   margin-right: 1rem;
@@ -140,7 +131,7 @@
 }
 
 /* Responsive */
-@media screen and (max-width: 845px) {
+@media screen and (max-width: 970px) {
 
   .appart-top > div:first-child {
     flex-basis: 100%;
