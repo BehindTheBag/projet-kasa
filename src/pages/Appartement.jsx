@@ -3,16 +3,17 @@ import hosticon from "../assets/hosticon.png";
 import star_active from "../assets/star_active.png";
 import star_inactive from "../assets/star_inactive.png";
 import AppartDetails from "../components/AppartDetails/AppartDetails";
+import Carousel from "../components/Carousel/Carousel";
 import logements from "../data/logements.json";
 import "../styles/Appartement.css";
 
 function Appartement() {
-  const { id } = useParams(); // id url 
-  const logement = logements.find(item => item.id === id); // recherche du bon logement 
+  const { id } = useParams();
+  const logement = logements.find(item => item.id === id);
 
   if (!logement) return <Navigate to="/404" />;
 
-  const rating = parseInt(logement.rating);
+  const rating = parseInt(logement.rating); //conversion nombre
   const stars = (
     <>
       <img src={rating >= 1 ? star_active : star_inactive} alt="étoile 1" />
@@ -25,9 +26,7 @@ function Appartement() {
 
   return (
     <div className="appart-page">
-      <div className="appart-image">
-        <img src={logement.cover} alt={logement.title} />
-      </div>
+      <Carousel pictures={logement.pictures} title={logement.title} />
 
       <div className="appart-top">
         <div>
