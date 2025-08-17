@@ -15,8 +15,8 @@
 }
 
 
-.banner img {
-	width: 80%;
+.about-page .banner img {
+	width: 100%;
 	min-height: 144px;
 	margin: auto;
 	display: block;

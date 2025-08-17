@@ -4,19 +4,15 @@
     font-size: 1.75rem;
     align-items: center;
     gap: 3rem;
-    padding: 0 5rem;
     font-weight: 600;
     color: #ff5d5d;
-    font-family: 'Montserrat', sans-serif;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    min-width: 0;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
+
 
 .navlogo {
     margin-right: auto;
-    
-    
 }
 
 .navlink {
@@ -31,10 +27,10 @@
     color: black;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1088px) {
   .navbar {
     text-transform: uppercase;
-    gap: 1rem;
+    gap: 4rem;
     font-size: 1.45rem;
     font-weight: 400;
     }

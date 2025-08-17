@@ -1,20 +1,27 @@
+.location-container {
+  max-width: 100%; /* largeur max du contenu */
+  margin: 0 auto;    /* centre le container */
+  padding: 2rem;     /* espace interne */
+  background-color: #F6F6F6;
+  border-radius: 1rem;
+  margin-top: 6rem;
+
+}
+
 .card {
     display: flex;
-    /* min-height: 50vh; */
-    margin-top: 6rem;
-    gap: 3rem;
+    justify-content: center;
+    gap: 2rem;
+    /* gap: 3rem; */
     flex-wrap: wrap;
     
-   
-    
-    
+
 }
 
 .house {
     display: flex;
     background: linear-gradient(222deg, transparent 99%, rgba(0, 0, 0, 0.5)),#FF6060;;
     border-radius: 0.7rem; 
-    width: 30%;
     min-width: 200px;
     min-height: 325px; 
     justify-content: center;
@@ -24,7 +31,6 @@
 
 .house img {
     width: 100%;
-    height: 100%;
     object-fit: cover; 
     border-radius: 0.7rem; 
 }
@@ -33,11 +39,11 @@
     position: absolute; 
     left: 1rem; 
     bottom: 1rem; 
+    width: 55%;
     font-weight: bold;
     font-size: 1.2rem;
     color: white;
     z-index: 2;
-    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -67,7 +73,20 @@
 
   .house img {
     width: 100%;
-    height: 325px;       
+    /* height: 325px;        */
+    height: auto;
     object-fit: cover;  
+
+  }
+
+    .house-title {
+    width: 44%;
+  }
+
+  
+  .location-container {
+    background-color: transparent;
+    border-radius: 0;
+    margin-top: 1rem;
   }
 }
