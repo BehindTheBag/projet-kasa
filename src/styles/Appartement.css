@@ -15,7 +15,7 @@
   font-weight: 500;
   color: #FF6060;
   /* text-align: start; */
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   margin: 0;
 }
 
@@ -130,8 +130,8 @@
   cursor: pointer;
 }
 
-/* Responsive */
-@media screen and (max-width: 970px) {
+/* check */
+@media screen and (max-width: 1088px) {
 
   .appart-top > div:first-child {
     flex-basis: 100%;
@@ -161,10 +161,13 @@
     margin: 0;
   }
 
-  .appart-details-wrapper {
+.appart-details-wrapper {
     flex-direction: column;
     width: 100%;
   }
+
+  .appart-title {
+    white-space: normal;
+    word-break: break-word; 
+  }
 }
-
-

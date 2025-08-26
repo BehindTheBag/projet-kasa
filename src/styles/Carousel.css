@@ -41,3 +41,17 @@
   font-size: 1.4rem;
   z-index: 1;
 }
+
+@media screen and (max-width: 1088px) {
+  .carousel-image {
+   width: 100%;
+   height: 100%;
+   object-fit: fill;
+}
+
+  }
+
+    .house-title {
+        width: 44%;
+        
+    }
